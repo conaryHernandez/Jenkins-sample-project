@@ -1,5 +1,6 @@
 node {
    stage('Prepare environment') {
+        git branch: 'master', url: 'https://github.com/conaryHernandez/testing-jenkins.git'
         sh 'npm install'
     }
     stage('Run tests')  {
